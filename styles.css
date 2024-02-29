@@ -1,0 +1,14 @@
+:root {
+  font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
+    source-sans-pro, sans-serif;
+  font-weight: normal;
+
+  /* Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #e6eff4;
+  --color-accent-primary: #5691ea;
+  --color-accent-secondary: #84ecf0;
+  --color-main-text: #171c0a;
+  --color-secondary-text: #636363;
+  --color-button-text: #ffffff;
+}
