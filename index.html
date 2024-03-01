@@ -1,12 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Admin Dashboard</title>
-</head>
-<body>
-    <span>Very nice very good text that needs to be seen</span>
-</body>
+  </head>
+  <body>
+    <header>
+      <search>
+        <form action="/search" autocomplete="off" method="GET" role="search">
+          <label for="search">
+            <img src="" alt="" />
+            <input type="text" id="search" name="search" />
+          </label>
+        </form>
+      </search>
+      <div id="profile-mini">
+        <a href=""><img src="" alt="" /></a>
+        <span id="avatar">
+          <img src="" alt="" />
+        </span>
+        <p>Ash Smith</p>
+      </div>
+      <div id="profile-main">
+        <img src="" alt="" />
+        <p>Hi there,</p>
+        <h2>Ash Smith (@ash-sm)</h2>
+      </div>
+      <div id="action-buttons">
+        <button>New</button>
+        <button>Update</button>
+        <button>Share</button>
+      </div>
+    </header>
+    <aside>
+      <h2><a href="#">Dashboard</a></h2>
+      <nav id="main-nav">
+        <ul>
+          <li>
+            <a href=""> <img src="" alt="" />Home</a>
+          </li>
+          <li>
+            <a href=""> <img src="" alt="" />Profile</a>
+          </li>
+          <li>
+            <a href=""> <img src="" alt="" />Messages</a>
+          </li>
+          <li>
+            <a href=""> <img src="" alt="" />History</a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" />Tasks</a>
+          </li>
+          <li>
+            <a href=""><img src="" alt="" />Communities</a>
+          </li>
+        </ul>
+      </nav>
+      <nav id="additional-nav">
+        <ul>
+          <li>
+            <a href="">
+              <img src="" alt="" />
+              Settings
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="" alt="" />
+              Support
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="" alt="" />
+              Privacy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <section id="projects">
+        <h2>Your projects</h2>
+        <article class="card">
+          <span></span>
+          <div class="card-content">
+            <h3>Super Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Sed nec aenean non lectus.
+              Sollicitudin velit nibh suspendisse tellus non aenean a maecenas.
+              Platea metus eget donec varius blandit lacinia augue fames.
+            </p>
+            <div class="card-actions">
+              <a href=""><img src="" alt="" /></a>
+              <a href=""><img src="" alt="" /></a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <span></span>
+          <div class="card-content">
+            <h3>Less Cool Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Sed nec aenean non lectus.
+              Sollicitudin velit nibh suspendisse tellus non aenean a maecenas.
+            </p>
+            <div class="card-actions">
+              <a href=""><img src="" alt="" /></a>
+              <a href=""><img src="" alt="" /></a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <span></span>
+          <div class="card-content">
+            <h3>Impossible App</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Sed nec aenean non
+              lectus...
+            </p>
+            <div class="card-actions">
+              <a href=""><img src="" alt="" /></a>
+              <a href=""><img src="" alt="" /></a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <span></span>
+          <div class="card-content">
+            <h3>Easy peasy app</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Tincidunt amet natoque
+              cras mattis feugiat vitae. Vel neque nibh sollicitudin quis morbi
+              tristique mi. Suscipit ac arcu nunc tristique.
+            </p>
+            <div class="card-actions">
+              <a href=""><img src="" alt="" /></a>
+              <a href=""><img src="" alt="" /></a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <span></span>
+          <div class="card-content">
+            <h3>Money maker</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Tincidunt amet natoque
+              cras mattis feugiat vitae. Vel neque nibh sollicitudin quis morbi
+              tristique mi. Suscipit ac arcu nunc tristique.
+            </p>
+            <div class="card-actions">
+              <a href=""><img src="" alt="" /></a>
+              <a href=""><img src="" alt="" /></a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <span></span>
+          <div class="card-content">
+            <h3>Add blocker</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Tincidunt amet natoque
+              cras mattis feugiat vitae...
+            </p>
+            <div class="card-actions">
+              <a href=""><img src="" alt="" /></a>
+              <a href=""><img src="" alt="" /></a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="announcements">
+        <h2>Announcements</h2>
+        <div>
+          <div class="news">
+            <h3>Site maintenance</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Massa lacus.</p>
+          </div>
+          <div class="news">
+            <h3>Policy update</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Velit risus at luctus.
+            </p>
+          </div>
+          <div class="news">
+            <h3>Community day</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. At eu ipsum eget.</p>
+          </div>
+        </div>
+      </section>
+      <section id="trending">
+        <h2>Trending</h2>
+        <div>
+          <div class="trends">
+            <a href=""><img src="" alt="" /></a>
+            <h3>@bun</h3>
+            <p>Javascript runtime</p>
+          </div>
+          <div class="trends">
+            <a href=""><img src="" alt="" /></a>
+            <h3>@react</h3>
+            <p>Javascript library</p>
+          </div>
+          <div class="trends">
+            <a href=""><img src="" alt="" /></a>
+            <h3>@golang</h3>
+            <p>Programming language</p>
+          </div>
+          <div class="trends">
+            <a href=""><img src="" alt="" /></a>
+            <h3>@arch-linux</h3>
+            <p>Linux distro</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
