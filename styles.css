@@ -44,7 +44,7 @@ button {
 /* Main grid container */
 body {
   display: grid;
-  grid-template-columns: 310px auto 310px;
+  grid-template-columns: 310px minmax(350px, 1fr) 310px;
   grid-template-rows: 200px 400px 1fr;
   padding-top: 30px;
 }
