@@ -75,6 +75,9 @@ input#search {
   width: 560px;
   height: 35px;
   padding-left: 8px;
+  background-color: var(--color-bg-secondary);
+  border: 0;
+  border-radius: 8px;
 }
 
 label[for="search"] {
@@ -180,6 +183,7 @@ aside > #nav-links {
 main {
   display: grid;
   column-gap: 70px;
+  row-gap: 20px;
   padding: 30px 35px 30px 35px;
   grid-template-columns: 1fr 320px;
   grid-template-rows: repeat(2, auto);
@@ -214,7 +218,6 @@ main {
   grid-template-columns: min-content auto;
   max-width: 350px;
   background-color: var(--color-bg-primary);
-  border: 1px solid transparent;
   border-radius: 8px;
 }
 
@@ -264,5 +267,27 @@ main {
 .news {
   display: grid;
   gap: 18px;
-  grid-template-rows: min-content 1fr ;
+  grid-template-rows: min-content 1fr;
+}
+
+/* Trending */
+#trending {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: min-content 1fr;
+}
+
+.trending-content {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 20px;
+  background-color: var(--color-bg-primary);
+  padding: 25px 8px 25px 25px;
+  border-radius: 8px;
+}
+
+.trends {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: min-content auto;
 }
