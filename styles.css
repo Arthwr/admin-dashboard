@@ -18,12 +18,9 @@
 /* Reset default browser styles */
 h1,
 h2,
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
+h3,
+ul,
+p {
   margin: 0;
   padding: 0;
 }
@@ -38,12 +35,19 @@ a {
   cursor: pointer;
 }
 
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
 /* Main grid container */
 body {
   height: 100vh;
   display: grid;
   grid-template-columns: 310px 1fr 310px;
   grid-template-rows: 200px 400px 400px;
+  padding-top: 30px;
 }
 aside {
   grid-row: 1/4;
@@ -58,12 +62,85 @@ main {
   grid-row: 2/4;
 }
 
+/* Header */
+header {
+  grid-column: 2/4;
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: min-content min-content;
+  padding: 0px 60px 0px 55px;
+}
+
+input#search {
+  width: 560px;
+  height: 35px;
+  padding-left: 8px;
+}
+
+label[for="search"] {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  align-items: center;
+  gap: 20px;
+}
+
+#profile-mini,
+#profile-main {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+}
+
+#profile-main {
+  justify-self: start;
+}
+
+#profile-main div {
+  align-self: end;
+}
+
+#profile-mini p,
+#profile-main p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#profile-main h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+#action-buttons {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+  align-items: end;
+}
+
+#action-buttons > button {
+  font-size: 1.5rem;
+  color: var(--color-bg-primary);
+  background-color: var(--color-accent-primary);
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+}
+
 /* Dashboard sidebar */
 aside {
   display: grid;
   gap: 50px;
   grid-template-rows: min-content min-content;
-  padding: 30px 30px 0px 20px;
+  padding: 0px 30px 0px 20px;
   font-size: 1.5rem;
   background-color: var(--color-bg-primary);
 }
