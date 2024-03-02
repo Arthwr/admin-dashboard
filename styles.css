@@ -43,10 +43,9 @@ button {
 
 /* Main grid container */
 body {
-  height: 100vh;
   display: grid;
   grid-template-columns: 310px 1fr 310px;
-  grid-template-rows: 200px 400px 400px;
+  grid-template-rows: 200px 400px 1fr;
   padding-top: 30px;
 }
 aside {
@@ -68,7 +67,7 @@ header {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 1fr auto;
-  grid-template-rows: min-content min-content;
+  grid-template-rows: repeat(2, min-content);
   padding: 0px 60px 0px 55px;
 }
 
@@ -139,7 +138,7 @@ label[for="search"] {
 aside {
   display: grid;
   gap: 50px;
-  grid-template-rows: min-content min-content;
+  grid-template-rows: repeat(2, min-content);
   padding: 0px 30px 0px 20px;
   font-size: 1.5rem;
   background-color: var(--color-bg-primary);
@@ -175,4 +174,95 @@ aside > #nav-links {
   grid-auto-flow: column;
   grid-auto-columns: min-content;
   align-items: center;
+}
+
+/* Main */
+main {
+  display: grid;
+  column-gap: 70px;
+  padding: 30px 35px 30px 35px;
+  grid-template-columns: 1fr 320px;
+  grid-template-rows: repeat(2, auto);
+  background-color: var(--color-bg-secondary);
+}
+
+#projects > h2,
+#announcements > h2,
+#trending > h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Projects */
+#projects {
+  grid-row: 1/3;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  gap: 30px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 350px);
+  grid-template-rows: repeat(3, 240px);
+  column-gap: 35px;
+  row-gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: min-content auto;
+  max-width: 350px;
+  background-color: var(--color-bg-primary);
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.card > span {
+  width: 10px;
+  background-color: var(--color-accent-secondary);
+  border-radius: 8px 0px 0px 8px;
+}
+
+.card-content {
+  display: grid;
+  grid-template-rows: repeat(2, min-content) 1fr;
+  gap: 20px;
+  padding: 25px 35px 15px 25px;
+}
+
+.card-content > p {
+  color: var(--color-secondary-text);
+  font-weight: 300;
+  max-width: 300px;
+}
+
+.card-actions {
+  align-self: end;
+  justify-self: end;
+}
+
+/* Announcements */
+#announcements {
+  display: grid;
+  grid-template-rows: min-content auto;
+  gap: 30px;
+}
+
+.announcements-content {
+  display: grid;
+  background-color: var(--color-bg-primary);
+  border-radius: 8px;
+  gap: 18px;
+  padding: 30px 35px 20px 35px;
+}
+
+.announcements-content .news:not(:last-child) {
+  border-bottom: 1px solid #8a8a8a;
+}
+
+.news {
+  display: grid;
+  gap: 18px;
+  grid-template-rows: min-content 1fr ;
 }
