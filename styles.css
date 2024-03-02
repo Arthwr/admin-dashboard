@@ -44,7 +44,7 @@ button {
 /* Main grid container */
 body {
   display: grid;
-  grid-template-columns: 310px 1fr 310px;
+  grid-template-columns: 310px auto 310px;
   grid-template-rows: 200px 400px 1fr;
   padding-top: 30px;
 }
@@ -188,6 +188,7 @@ main {
   grid-template-columns: 1fr 320px;
   grid-template-rows: repeat(2, auto);
   background-color: var(--color-bg-secondary);
+  box-shadow: inset 0px -5px 5px -5px rgba(0, 0, 0, 0.5);
 }
 
 #projects > h2,
