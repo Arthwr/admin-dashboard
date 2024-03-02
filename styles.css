@@ -182,7 +182,7 @@ aside > #nav-links {
 /* Main */
 main {
   display: grid;
-  column-gap: 70px;
+  column-gap: 30px;
   row-gap: 20px;
   padding: 30px 35px 30px 35px;
   grid-template-columns: 1fr 320px;
